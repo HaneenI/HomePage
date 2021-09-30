@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF_8 " />
+  <title>Tour of ancient Egypt</title>
+  <meta content="I hate web development , i wish death than such a mischef" />
+  <link rel="shortcut icon" href="image/logo_1.jpg">
+
+  <link rel=" stylesheet" href="CSS/home.css" />
+  <script src="main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+</head>
+
+<body>
+  <section class="head" id="home">
+    <h2 id="text">
+      <span>W</span>ear your p<span>ha</span>raonic costu<span>m</span>e and
+      Get rea<span>dy</span>
+    </h2>
+
+    <a href="#container" id="btn">Explore</a>
+    <img
+      src="image-home/kisspng-egyptian-pyramids-ancient-egypt-egyptian-pyramids-5a83bb33c64d40.5497113615185825798123.png"
+      id="piramids " />
+    <img src="./image-home/kisspng-white-black-circle-sky-font-white-stars-5ac355e4de1f62.3593138315227509489098-1.png"
+      id="stars" />
+
+    <img
+      src="./image-home/kisspng-puerto-rico-fajita-guacamole-coconut-cartoon-flat-silhouette-mountain-tree-5aa287bf172b67.9202181615206010230949.png"
+      id="deasrt" />
+  </section>
+
+  <img src="./image-home/kisspng-new-moon-month-moon-5a7cf89591b7d2.5340958015181395415969.png" id="moon" />
+  <!-- <header>
+        <a href="homeP.html" class="here">Home</a>
+        <a href="index-kingAkhenaten.html">King Akhenaten</a>
+        <a href="king-Tutankhamun.html">King Tutankhamun</a>
+        <a href="kingThutmose3.html">King Thutmose |||</a>
+        <a href="queenNefertiti.html">Queen Nefertiti</a>
+    </header> -->
+  <script>
+    let moon = document.getElementById("moon");
+    let deasrt = document.getElementById("deasrt");
+    let piramids = document.getElementById("piramids");
+    let text = document.getElementById("text");
+    let btn = document.getElementById("btn");
+    let stars = document.getElementById("stars");
+    window.addEventListener("scroll", function () {
+      let value = window.scrollY;
+      if (value > 520) {
+        moon.style.top = 520 + "px";
+        moon.style.left = value + "px";
+        piramids.style.top = value + "px";
+      }
+      else {
+        moon.style.top = value + "px";
+        moon.style.left = value + "px";
+        piramids.style.top = value + "px";
+      }
+
+    });
+  </script>
+  <!-----------------------------------------------------------youssef------------------------------------------------------------------>
+  <div class="container" id="container">
+
+    <div class="navbar">
+      <nav>
+        <ul class="unorderd-list">
+          <li>
+            <a>
+              <div class="dropdown">
+                <a class="dropbtn" id="xx">Menu</a>
+                <div class="dropdown-content">
+                  <a href="index-kingAkhenaten.html" class="drop">King Akhenaten</a>
+                  <a href="king-Tutankhamun.html" class="drop">King Tutankhamun</a>
+                  <a href="kingThutmose3.html" class="drop">King Thutmose III</a>
+                  <a href="queenNefertiti.html" class="drop">Queen Nefertiti</a>
+                  <a href="touristicPlaces.html" class="drop">Touristic Places</a>
+                  <hr>
+                  <p class="adminMood">Cute Switch UwU</p>
+                  <div class="switch-container">
+                    <label class="switch">
+                      <input type="checkbox" name="admin" id="admin-switch">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li><a href="homeP.html" class="here" id="xx">Home</a></li>
+          <li><a href="touristicPlaces.html" id="xx">Touristic Places</a></li>
+          <li><a href="book.html" id="xx">Tickets</a></li>
+          <li><a onclick="contact()" id="xx">Contact Us</a></li>
+          <li><a onclick="FCISASU()" id="xx">FCIS ASU</a></li>
+        </ul>
+        <ul class="buttons">
+          <li class="button"><a href="./index.php">logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container-home">
+      <!-- <div class="photo1">
+        <div class="iFrame" ><iframe src="imageslider.html" frameborder="0"></iframe></div>
+      </div> -->
+      <div class="photo1">
+        <div class="slide-container">
+          <div class="image-container">
+            <img src="image/x.jpg" alt="" class="slider-image"/>
+            <img src="image/xx.jpg" alt="" class="slider-image"/>
+            <img src="image/xxx.webp" alt="" class="slider-image"/>
+            <img src="image/xxxx.jpg" alt="" class="slider-image"/>
+          </div>
+        </div>
+
+      </div>
+      <div class="photo2">
+        <div class="Box">
+          <div class="front Nefertiti face">
+            <img src="image/nef.png" alt="Nefertiti_Photo" />
+          </div>
+          <div class="back face">
+            <img src="image/nefertiti.png" alt="Nefertiti" />
+            <div class="topic">
+              <h2 class="sub-title">Nefertiti</h2>
+              <h4>queen of Egypt and wife of Akhenaton</h4>
+              <p class="paragraph">
+                she played a prominent role in changing Egypt's traditional
+                polytheistic religion to one that was monotheistic.
+              </p>
+              <a href="queenNefertiti.html">Read More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo3">
+        <div class="Box">
+          <div class="front Akhenaten face">
+            <img src="image/akh.png" alt="Akhenaten_Photo" />
+          </div>
+          <div class="back face">
+            <img src="image/akhina.png" alt="Akhenaten" />
+            <div class="topic">
+              <h2 class="sub-title">Akhenaten</h2>
+              <h4>early ruler of Egypt ,replaced old gods with sun worship</h4>
+              <p class="paragraph">
+                famous for changing the traditional religion of Egypt from the
+                worship of many gods to the worship of a single god named Aten
+              </p>
+              <a href="index-kingAkhenaten.html">Read More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo4">
+        <div class="Box">
+          <div class="front Tutankhamun face">
+            <img src="image/tutan11.png" alt="Tutankhamun_Photo" />
+          </div>
+          <div class="back face">
+            <img src="image/totankh.png" alt="Tutankhamun" />
+            <div class="topic">
+              <h2 class="sub-title">Tutankhamun</h2>
+              <h4>Tutankhamun was an Egyptian pharaoh of the 18th</h4>
+              <p class="paragraph">
+                original name Tutankhaten, by name King Tut,during his reign,
+                powerful advisers restored the traditional Egyptian religion and
+                art.
+              </p>
+              <a href="king-Tutankhamun.html">Read More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="photo5">
+        <div class="Box">
+          <div class="front ThutmoseIII face">
+            <img src="image/thotm.png" alt="Thutmose|||_Photo" />
+          </div>
+          <div class="back face">
+            <img src="image/thuhot.png" alt="Thutmose|||" />
+            <div class="topic">
+              <h2 class="sub-title">Thutmose|||</h2>
+              <h4>He was the sixth pharaoh of the Eighteenth Dynasty</h4>
+              <p class="paragraph">
+                thutmose III was a skilled warrior who brought the Egyptian
+                empire to the zenith of its power by conquering all of Syria.
+              </p>
+              <a href="kingThutmose3.html">Read More!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+
+    <div class="container-foot">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Informations </h4>
+          <ul>
+
+            <li> <a href="#"> Our Services </a> </li>
+            <li> <a href="#"> Loction </a> </li>
+            <li> <a href="#"> Privacy policy </a> </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help </h4>
+          <ul>
+            <li> <a href="#">Booking </a> </li>
+            <li> <a href="#"> Contact Us </a> </li>
+            <li> <a href="#"> Customer Service </a> </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <p class="text">We are a team from the Faculty of Computers and Information Ain Shams University who
+            used all
+            our skills to
+            create this site .</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="Social-media">
+
+            <a href=" # "> <i class="fab fa-facebook"></i> </a> </li>
+            <a href=" # "> <i class="fab fa-twitter"></i> </a> </li>
+            <a href=" # "> <i class="fab fa-instagram"></i></a> </li>
+            <a href=" # "><i class="fab fa-linkedin"></i></a> </li>
+            <p class="link"> www.computer scince.com</p>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
