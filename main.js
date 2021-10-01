@@ -6,9 +6,9 @@ var btn = document.getElementById('btn');
 var stars = document.getElementById('stars');
 window.addEventListener('scroll', function () {
   var value = window.scrollY;
-  if (value > 520) {
-    moon.style.top = 520 + 'px';
-    moon.style.left = value + 'px';
+  if (value > 720) {
+    moon.style.top = 720 + 'px';
+    moon.style.left = 720 + 'px';
   }
   else {
     moon.style.top = value + 'px';
