@@ -102,6 +102,8 @@ position: absolute;
 @media (min-width: 768px) {
   #deasrt {
     height:463px ;
+    transform: translateY(470px);
+    width: 1015px;
   }
 }
 @media (min-width: 992px) {
@@ -139,7 +141,7 @@ margin-top: 40%;
 }
 @media (min-width: 768px) {
  #camel {
-  margin-top: 47%;
+  transform: translateY(586px);
   }
 }
 @media (min-width: 992px) {
