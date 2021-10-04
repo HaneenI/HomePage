@@ -30,8 +30,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-/* }@media (max-width: 575px) {
+ }@media (max-width: 575px) {
   section{
  height: 81vh  ;
   }
@@ -60,7 +59,7 @@ section {
   section {
     height:60vh;
   }
-} */
+} 
 
 
 section::before {
