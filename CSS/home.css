@@ -14,7 +14,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#2b1055, #7597de);
+  background: linear-gradient(#e69d16 ,#f0f17e);
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -30,6 +30,38 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+/* }@media (max-width: 575px) {
+  section{
+ height: 81vh  ;
+  }
+}
+@media (min-width: 576px) {
+  section {
+    height:70vh ;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    height: 53vh ;
+  }
+}
+@media (min-width: 992px) {
+ section {
+    height: 40vh;
+  }
+}
+@media (min-width: 1200px) {
+ section {
+    height:74vh;
+  }
+}
+@media (min-width: 1400px) {
+  section {
+    height:60vh;
+  }
+} */
+
 
 section::before {
   content: "";
@@ -49,16 +81,123 @@ section::before {
   pointer-events: none;
   z-index: 20;
 }
-#deasrt {
-  z-index: 10;
-  height: 85%;
+  #deasrt {
+  z-index:   10;
+ height:  670px   ;
+  
+position: absolute;
+ 
+ 
+
+} @media (max-width: 575px) {
+  #deasrt{
+ height:508px ;
+  }
 }
-#moon {
-  width: 10%;
-  position: absolute;
-  top: 0;
-  left: 0;
+@media (min-width: 576px) {
+  #deasrt {
+    height:463px ;
+  }
 }
+@media (min-width: 768px) {
+  #deasrt {
+    height:463px ;
+  }
+}
+@media (min-width: 992px) {
+  #deasrt {
+    height:463px;
+  }
+}
+@media (min-width: 1200px) {
+  #deasrt {
+    height:463px;
+  }
+}
+@media (min-width: 1400px) {
+  #deasrt {
+    height:463px;
+  }
+}
+
+
+ #camel{
+width: 20%;
+height: 30%;
+z-index: 20;
+margin-top: 40%;
+} 
+ @media (max-width: 575px) {
+ #camel{
+  margin-top: 99%;
+}
+ }
+@media (min-width: 576px) {
+ #camel {
+  margin-top:  65%;
+  }
+}
+@media (min-width: 768px) {
+ #camel {
+  margin-top: 47%;
+  }
+}
+@media (min-width: 992px) {
+ #camel {
+  margin-top: 37%;
+  }
+}
+@media (min-width: 1200px) {
+ #camel {
+  margin-top: 30%;
+  }
+}
+@media (min-width: 1400px) {
+ #camel {
+  margin-top: 30%;
+  }
+}
+
+ 
+#moon{
+   width:  30%;
+   position :absolute ;
+   top: 0 ;
+   left:0;
+   margin-top:-12% ;
+   margin-left:-8%;
+
+}  @media (max-width: 575px) {
+  #moon{
+  width:   63%;
+ }
+  }
+ @media (min-width: 576px) {
+  #moon {
+  width: 55%;
+   }
+ }
+ @media (min-width: 768px) {
+  #moon {
+  width: 47%;
+   }
+ }
+ @media (min-width: 992px) {
+  #moon {
+  width: 40%;
+   }
+ }
+ @media (min-width: 1200px) {
+  #moon {
+  width: 40%;
+   }
+ }
+ @media (min-width: 1400px) {
+  #moon {
+  width: 40%;
+   }
+ }
+ 
 
 #text {
   position: relative;
@@ -69,34 +208,128 @@ section::before {
   margin-left: 5%;
   align-items: center;
   overflow: hidden;
-}
+}@media (max-width: 575px) {
+  #text{
+  font-size:   2em;
+  margin: 0 20px 0 0;
+  position: absolute;
+  margin-left: 5%;
+ }
+  }
+ @media (min-width: 576px) {
+  #text {
+  font-size: 3em;
+  margin: 23px -50px 94px -77px;
+  
+ 
+   }
+ }
+ @media (min-width: 768px) {
+  #text {
+ font-size: 3em;
+ 
+ 
+   }
+ }
+ @media (min-width: 992px) {
+  #text {
+  font-size: 3em;
+  
+   }
+ }
+ @media (min-width: 1200px) {
+  #text {
+ font-size: 4em;
+ 
+   }
+ }
+ @media (min-width: 1400px) {
+  #text {
+  font-size: 3em;
+   
+   }
+ }
+ 
+ 
+
+ 
 
 #btn {
   text-decoration: none;
   padding: 32px 28px;
+  /* padding-bottom: 5%; */
+  /* padding-left: -3%; */
+  /* padding-right: 5%; */
   border-radius: 40px;
   background: #fff;
-  color: #2b1055;
+  color:  #c98912;
   font-size: 2em;
   z-index: 55;
   transform: translateY(100px);
-  margin-right: 40%;
+  margin-right: 45%;
   height: 7%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   transition: 0.5s 0s ease;
-}
 
+}
+  @media (max-width: 575px) {
+   #btn{
+ padding:25px 21px; 
+ padding-left:  21px;
+ align-items: center;
+ margin-right:  12%;
+ font-size: 18px;
+ 
+ }
+  }
+ @media (min-width: 576px) {
+   #btn {
+ padding: 25px 23px; 
+ font-size: 26px;
+ 
+   }
+ }
+ @media (min-width: 768px) {
+   #btn {
+padding: 26px 29px; 
+font-size: 26px;
+   }
+ }
+ @media (min-width: 992px) {
+   #btn {
+ padding: 26px 28px; 
+ font-size: 26px;
+  
+   }
+ }
+ @media (min-width: 1200px) {
+   #btn {
+padding: 32px 28px; 
+font-size: 26px;
+ 
+   }
+ }
+ @media (min-width: 1400px) {
+   #btn {
+ padding: 32px 28px; 
+ font-size: 26px;
+   
+   }
+ } 
+  
+
+ 
 #btn:hover {
   margin-bottom: 5px;
   box-shadow: 0px 0px 12px 5px white;
   color: #7597de;
-}
+} 
 
 #text span {
-  color: #7597de;
+  color: #d48e0b;
 }
 
 .clearfix {
@@ -106,6 +339,7 @@ section::before {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 header {
   padding-left: 30px;
