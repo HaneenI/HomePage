@@ -207,13 +207,15 @@ section::before {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   #piramids{
-  height: 100px;
+    height: 68%;
+    width: 130%;
+    transform: translate(-124px,553px);
   }
   #deasrt {
-    height: 463px;
+    height: 652px;
     margin-top: 80%;
-    transform: translateX(-70px);
-    width: 112%;
+    transform: translateX(-140px);
+    width: 125%;
   }
   #camel {
     margin-top: 130%;
@@ -224,17 +226,18 @@ section::before {
     width: 47%;
   }
   #text {
-    font-size: 3em;
+    font-size: 5em;
     overflow: unset;
-    width: 402px;
+    width: 745px;
     position: absolute;
     text-align: center;
-    top: 252px;
+    top: 714px;
   }
   #btn {
-    padding: 26px 29px;
-    font-size: 26px;
-    margin: 0;
+    padding: 36px 51px;
+    font-size: 50px;
+    border-radius: 93px;
+    margin: 231px 0 0 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
