@@ -206,13 +206,19 @@ section::before {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #piramids{
+  height: 100px;
+  }
   #deasrt {
     height: 463px;
+    margin-top: 80%;
+    transform: translateX(-70px);
+    width: 112%;
   }
   #camel {
-    margin-top: 62%;
-    height: 24%;
-    width: 38%;
+    margin-top: 130%;
+    height: 18%;
+    width: 50%;
   }
   #moon {
     width: 47%;
