@@ -247,7 +247,8 @@ section::before {
     transform: translateX(-76px);
   }
   #camel {
-    margin-top: 47%;
+    margin-top: 40%;
+    height: 150px;
   }
   #moon {
     width: 40%;
