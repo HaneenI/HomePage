@@ -279,7 +279,6 @@ section::before {
     font-size: 26px;
   }
 }
-/* 
   @media (min-width: 1400px) {
     #deasrt {
       height: 463px;
@@ -297,7 +296,7 @@ section::before {
       padding: 32px 28px;
       font-size: 26px;
     }
-  } */
+  }
 
 .clearfix {
   clear: both;
