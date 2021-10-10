@@ -18,6 +18,7 @@
 
 body {
   background-image: url("../black1.png");
+  overflow-x: hidden;
 }
 .parent-h {
   width: 1200px;
@@ -74,10 +75,6 @@ header a:hover {
   color: #ecc662;
 }
 
-.parent {
-  display: inline-block;
-}
-
 .clearfix {
   clear: both;
 }
@@ -87,7 +84,7 @@ header a:hover {
 }
 .footer {
   background-color: rgb(0, 0, 0);
-  /* padding: 40px 0px; */
+  padding: 40px 0px;
   z-index: 999;
 }
 .footer-col {
@@ -183,9 +180,9 @@ header a:hover {
   flex-direction: row;
   width: fit-content;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 20%);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -258,7 +255,7 @@ input[type="submit"]:hover {
 }
 
 .navbar nav {
-  width: 100%;
+  width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -427,7 +424,7 @@ input:checked + .slider:before {
 }
 
 .buttons {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 40px 0px 0px;
 }
 
 .button {
@@ -454,30 +451,188 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 575px) {
-  .container {
-    transform: scale(0.59) translate(-522px, -500px);
+  .container-f {
+    transform: scale(0.65) translate(-94%);
   }
-  .container h1 {
+  .container-f h1 {
     font-size: 40px;
+  }
+  
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+  .footer-col {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .footer {
+    width: 430px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col h4 {
+    font-size: 22px;
+  }
+
+  .footer-col ul li a {
+    font-size: 18px;
+  }
+  .footer-col .text {
+    font-size: 18px;
+  }
+  .footer-parent {
+    width: fit-content;
+  }
+  header {
+    padding-left: 0px;
+  }
+  header a {
+    margin-right: 16px;
+    font-size: 12px;
+  }
+  .parent-h {
+    max-width: 575px;
+  }
+  .navbar nav {
+    width: 425px;
+    margin-left: -20px;
+  }
+  .element {
+    font-size: 8px !important;
+  }
+  .buttons {
+    margin: 0px 0px 0px 0px;
+    transform: scale(0.49);
+
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   img {
     width: 280px;
   }
-  .container {
-    width: 550px;
-    height: 570px;
-  }
-  .container h1 {
+  
+  .container-f h1 {
     font-size: 40px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .footer-col {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col h4 {
+    font-size: 22px;
+  }
+
+  .footer-col ul li a {
+    font-size: 18px;
+  }
+  .footer-col .text {
+    font-size: 18px;
+  }
+  .footer-parent {
+    width: 575px;
+  }
+  .parent-h {
+    position: initial;
+  }
+  .container-f {
+    top: 0;
+    width: 570px;
+    height: 500px;
+    transform: scale(0.98) translate(-51%,20%);
+  }
+  .navbar nav {
+    width:  576px;
+  }
+  .element {
+    font-size: 14px !important;
+  }
+  .parent-f {
+    width: 575px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .parent-h {
+    position: initial;
+  }
+  .container-f {
+    top: 0;
+  }
+  .navbar {
+    margin-left: 7%;
+  }
+  .navbar nav {
+    width: 768px;
+  }
+  .element {
+    font-size: 16px !important;
+  }
+  .footer-col h4 {
+    font-size: 20px;
+  }
+
+  .footer-col ul li a {
+    font-size: 15px;
+  }
+
+  .footer-col .Social-media a {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    line-height: 50px;
+  }
+
+  .footer-col ul li a {
+    line-height: 30px;
+  }
+
+  .footer-col .text {
+    font-size: 15px;
+  }
+  .link {
+    width: 190px;
+    transform: translateX(-50px);
+  }
+  .footer-parent {
+    width: 767px;
+  }
+  .buttons {
+    margin: 0px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
+  .parent-h {
+    position: initial;
+  }
+  .navbar nav {
+    width: 992px;
+  }
+  .container-f {
+    top: 0;
+  }
+  .parent {
+    width: 991px;
+    overflow-x: hidden;
+  }
+  .footer-parent {
+    width: 991px;
+  }
+  .parent-h {
+    width: 991px;
+    overflow-x: hidden;
+  }
 }
