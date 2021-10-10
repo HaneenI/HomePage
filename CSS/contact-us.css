@@ -452,10 +452,13 @@ input:checked + .slider:before {
 
 @media (max-width: 575px) {
   .container-f {
-    transform: scale(0.65) translate(-94%);
+    transform: scale(0.45) translate(-135%);
   }
   .container-f h1 {
     font-size: 40px;
+  }
+  .footer {
+    width: min-content;
   }
   
 .row {
@@ -466,9 +469,6 @@ input:checked + .slider:before {
   .footer-col {
     width: 50%;
     margin-top: 20px;
-  }
-  .footer {
-    width: 430px;
   }
 
   .footer-col ul li:not(:last-child) {
@@ -487,15 +487,9 @@ input:checked + .slider:before {
   .footer-parent {
     width: fit-content;
   }
-  header {
-    padding-left: 0px;
-  }
-  header a {
-    margin-right: 16px;
-    font-size: 12px;
-  }
   .parent-h {
     max-width: 575px;
+    width: 425px;
   }
   .navbar nav {
     width: 425px;
