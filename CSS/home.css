@@ -261,12 +261,13 @@ section::before {
     font-size: 26px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399px){
   #deasrt {
     height: 463px;
   }
   #camel {
-    margin-top: 38%;
+    /* margin-top: 38%; */
+    margin-top: 35%;
   }
   #moon {
     width: 40%;
