@@ -14,12 +14,15 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#e69d16 ,#f0f17e);
+  background: linear-gradient(#e69d16, #f0f17e);
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 html {
   overflow-x: hidden;
+}
+.container-homeP {
+  overflow-y: hidden;
 }
 section {
   position: relative;
@@ -75,6 +78,9 @@ section::before {
   pointer-events: none;
   z-index: 20;
 }
+/* #piramids {
+  width: 106%;
+} */
 
 #deasrt {
   z-index: 10;
@@ -141,86 +147,121 @@ section::before {
   color: #d48e0b;
 }
 
-@media (max-width: 575px) {
-  .head img {
-    height: 84%;
-    margin-top: 121px;
+@media (max-width: 450px){
+  #piramids {
+    height: 87%;
+    width: 143%;
+    transform: translate(-15%, 14.5%);
+   }
+    #deasrt {
+      height: 390px;
+    }
+    #camel {
+      margin-top: 136%;
+      width: 229px;
+      height: 132px;
+    }
+    #moon {
+      width: 63%;
+    }
+    #text {
+      width: 290px;
+      font-size: 2em;
+      position: absolute;
+      margin-left: 5%;
+      text-align: center;
+    }
+    #btn {
+      padding: 21px;
+      padding-left: 21px;
+      align-items: center;
+      margin-right: 0%;
+      font-size: 18px;
+    }
   }
-  #deasrt {
-    height: 508px;
+  @media (min-width: 451px) and (max-width: 575px) {
+   #piramids {
+    height: 87%;
+    width: 143%;
+    transform: translate(-15%, 14.5%);
+   }
+    #deasrt {
+      height: 390px;
+    }
+    #camel {
+      margin-top: 97%;
+      width: 229px;
+      height: 182px;
+    }
+    #moon {
+      width: 63%;
+    }
+    #text {
+      width: 290px;
+      font-size: 2em;
+      position: absolute;
+      margin-left: 5%;
+      text-align: center;
+    }
+    #btn {
+      padding: 21px;
+      padding-left: 21px;
+      align-items: center;
+      margin-right: 0%;
+      font-size: 18px;
+    }
   }
-  #camel {
-    margin-top: 103%;
-    width: 229px;
-    height: 182px;
-  }
-  #moon {
-    width: 63%;
-  }
-  #text {
-    width: 290px;
-    font-size: 2em;
-    position: absolute;
-    margin-left: 5%;
-    text-align: center;
-  }
-  #btn {
-    padding: 21px;
-    padding-left: 21px;
-    align-items: center;
-    margin-right: 0%;
-    font-size: 18px;
-  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #piramids {
+      margin-top: 0;
+    }
+    #deasrt {
+      height: 463px;
+    }
+    #camel {
+      top: 35%;
+      width: 262px;
+      height: 172px;
+    }
+    #moon {
+      width: 55%;
+    }
+    #text {
+      font-size: 2.8em;
+      overflow: unset;
+      width: 402px;
+      position: absolute;
+      text-align: center;
+      top: 252px;
+      margin: 23px -50px 94px -77px;
+    }
+    #btn {
+      padding: 25px 23px;
+      font-size: 26px;
+      padding: 26px 29px;
+      font-size: 26px;
+      margin: 0;
+    }
+  
 }
-@media (min-width: 575px) and (max-width: 767px) {
-  .head img {
-    height: 88%;
-    margin-top: 100px;
-  }
-  #deasrt {
-    height: 463px;
-  }
-  #camel {
-    top: 282px;
-    width: 262px;
-    height: 172px;
-  }
-  #moon {
-    width: 55%;
-  }
-  #text {
-    font-size: 2.8em;
-    overflow: unset;
-    width: 402px;
-    position: absolute;
-    text-align: center;
-    top: 252px;
-    margin: 23px -50px 94px -77px;
-  }
-  #btn {
-    padding: 25px 23px;
-    font-size: 26px;
-    padding: 26px 29px;
-    font-size: 26px;
-    margin: 0;
-  }
-}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
-  #piramids{
-    height: 68%;
-    width: 130%;
-    transform: translate(-124px,553px);
+  #piramids {
+    height: 75%;
+    width: 156%;
+    transform: translate(-19%, 33%);
   }
   #deasrt {
-    height: 652px;
-    margin-top: 80%;
-    transform: translateX(-140px);
-    width: 125%;
+    height: 581px;
+    margin-top: 124%;
+    transform: translate(-11%,-118%);
+    width: 117%;
   }
   #camel {
-    margin-top: 130%;
-    height: 18%;
-    width: 50%;
+    margin-top: 156%;
+    height: 16%;
+    width: 51%;
   }
   #moon {
     width: 47%;
@@ -231,13 +272,13 @@ section::before {
     width: 745px;
     position: absolute;
     text-align: center;
-    top: 714px;
+    top: 46%;
   }
   #btn {
-    padding: 36px 51px;
+    padding: 44px 60px;
     font-size: 50px;
     border-radius: 93px;
-    margin: 231px 0 0 0;
+    margin: 54% 0 0 0;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -247,7 +288,7 @@ section::before {
     transform: translateX(-76px);
   }
   #camel {
-    margin-top: 37%;
+    margin-top: 48%;
     height: 150px;
   }
   #moon {
@@ -261,7 +302,7 @@ section::before {
     font-size: 26px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1399px){
+@media (min-width: 1200px) and (max-width: 1399px) {
   #deasrt {
     height: 463px;
   }
@@ -280,24 +321,24 @@ section::before {
     font-size: 26px;
   }
 }
-  @media (min-width: 1400px) {
-    #deasrt {
-      height: 463px;
-    }
-    #camel {
-      margin-top: 30%;
-    }
-    #moon {
-      width: 40%;
-    }
-    #text {
-      font-size: 3em;
-    }
-    #btn {
-      padding: 32px 28px;
-      font-size: 26px;
-    }
+@media (min-width: 1400px) {
+  #deasrt {
+    height: 463px;
   }
+  #camel {
+    margin-top: 30%;
+  }
+  #moon {
+    width: 40%;
+  }
+  #text {
+    font-size: 3em;
+  }
+  #btn {
+    padding: 32px 28px;
+    font-size: 26px;
+  }
+}
 
 .clearfix {
   clear: both;
@@ -306,7 +347,6 @@ section::before {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 header {
   padding-left: 30px;
@@ -641,7 +681,6 @@ input:checked + .slider:before {
 /*Navbar end*/
 /*Main elements and divs*/
 
-
 .iFrame {
   height: 320px;
   overflow: hidden;
@@ -864,7 +903,6 @@ input:checked + .slider:before {
   padding: 0;
 }
 
-
 @media (max-width: 575px) {
   .navbar #xx {
     margin-right: 10px;
@@ -879,9 +917,10 @@ input:checked + .slider:before {
 
   .navbar {
     height: 40px;
-  } 
+  }
 
-  .navbar #xx , .button a{
+  .navbar #xx,
+  .button a {
     font-size: 10px;
   }
   .container-home {
@@ -893,7 +932,7 @@ input:checked + .slider:before {
     transform: scale(0.58) translateY(-80px);
     position: relative;
   }
-  
+
   .back {
     transform: rotateY(-90deg) scale(0.79) translateY(-470px);
   }
@@ -906,16 +945,16 @@ input:checked + .slider:before {
   }
 
   .photo2 {
-    transform: translate(80px,-30px);
+    transform: translate(80px, -30px);
   }
   .photo3 {
-    transform: translate(195px , 30px);
+    transform: translate(195px, 30px);
   }
   .photo4 {
-    transform: translate(80px , 90px);
+    transform: translate(80px, 90px);
   }
   .photo5 {
-    transform: translate(195px , 150px);
+    transform: translate(195px, 150px);
   }
 
   .footer-col {
@@ -930,7 +969,6 @@ input:checked + .slider:before {
   .footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
   }
-
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -942,9 +980,10 @@ input:checked + .slider:before {
   }
   .navbar {
     height: 50px;
-  } 
+  }
 
-  .navbar #xx , .button a{
+  .navbar #xx,
+  .button a {
     font-size: 13px;
   }
   .container-home {
@@ -961,23 +1000,22 @@ input:checked + .slider:before {
   }
 
   .photo2 {
-    transform: translate(-55px,20px);
+    transform: translate(-55px, 20px);
   }
   .photo3 {
-    transform: translate(70px , 20px);
+    transform: translate(70px, 20px);
   }
   .photo4 {
-    transform: translate(-55px , 20px);
+    transform: translate(-55px, 20px);
   }
   .photo5 {
-    transform: translate(70px , 20px);
+    transform: translate(70px, 20px);
   }
 
   .footer-col {
     width: 50%;
     margin-top: 20px;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -987,9 +1025,10 @@ input:checked + .slider:before {
 
   .navbar {
     height: 50px;
-  } 
+  }
 
-  .navbar #xx , .button a{
+  .navbar #xx,
+  .button a {
     font-size: 15px;
   }
   .container-home {
@@ -1004,7 +1043,7 @@ input:checked + .slider:before {
   .photo1 {
     transform: scale(1.2) translateY(40px);
   }
-  .photo2 >.Box {
+  .photo2 > .Box {
     width: 460px;
     height: 370px;
     transform-style: preserve-3d;
@@ -1014,12 +1053,12 @@ input:checked + .slider:before {
   .photo2 .Box:hover {
     transform: rotateX(90deg);
   }
-  
+
   .photo2 .back {
     transform: rotateX(-90deg) scale(0.79);
   }
 
-  .photo5 >.Box {
+  .photo5 > .Box {
     width: 460px;
     height: 370px;
     transform-style: preserve-3d;
@@ -1029,7 +1068,7 @@ input:checked + .slider:before {
   .photo5 .Box:hover {
     transform: rotateX(90deg);
   }
-  
+
   .photo5 .back {
     transform: rotateX(-90deg) scale(0.79);
   }
@@ -1038,13 +1077,13 @@ input:checked + .slider:before {
     transform: translateY(90px);
   }
   .photo3 {
-    transform: translate(50px , 90px);
+    transform: translate(50px, 90px);
   }
   .photo4 {
-    transform: translate(-70px , 80px);
+    transform: translate(-70px, 80px);
   }
   .photo5 {
-    transform: translate(-20px , 80px);
+    transform: translate(-20px, 80px);
   }
 
   .footer-col h4 {
@@ -1074,7 +1113,6 @@ input:checked + .slider:before {
     width: 190px;
     transform: translateX(-50px);
   }
-  
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1097,7 +1135,7 @@ input:checked + .slider:before {
     transform: translateY(-20px);
   }
   .photo5 {
-    transform: translate(50px , -20px);
+    transform: translate(50px, -20px);
   }
 }
 

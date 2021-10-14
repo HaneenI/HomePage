@@ -357,6 +357,7 @@ button a {
 .footer-col .text {
   font-size: 20px;
   font-weight: 300;
+  line-height: 2;
   text-decoration: none;
   color: rgb(241, 199, 199);
   transition: 0.5s 0s ease;
